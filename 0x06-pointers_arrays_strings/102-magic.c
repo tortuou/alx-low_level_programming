@@ -1,11 +1,5 @@
 #include <stdio.h>
 
-/**
- * the program prints a[2] = 98
- *
- * Return: 0
- */
-
 int main(void)
 {
 	int n;
@@ -14,7 +8,14 @@ int main(void)
 
 	a[2] = 1024;
 	p = &n;
+	/*
+	 * you are not allowed to use a
+	 * you are not allowed to modify p
+	 * only one statement
+	 * you are not allowed to code anything else than this line of code
+	 */
 	*(p + 5) = 98;
+	/* this prints 98\n */
 	printf("a[2] = %d\n", a[2]);
 	return (0);
 }
