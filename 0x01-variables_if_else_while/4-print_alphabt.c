@@ -14,7 +14,7 @@ int main(void)
 		{
 			continue;
 		}
-		else if(c == 'q')
+		else if (c == 'q')
 		{
 			continue;
 		}
