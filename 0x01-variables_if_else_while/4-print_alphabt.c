@@ -13,13 +13,13 @@ int main(void)
 		if (c != 'q' || c != 'e')
 		{
 			c++;
+			putchar (c);
 		}
 		else
 		{
 			continue;
 		}
 	}
-	putchar (c);
 	putchar ('\n');
 	return (0);
 }
