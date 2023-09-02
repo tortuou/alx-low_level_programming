@@ -12,11 +12,11 @@ int main(void)
 	p = 1;
 	f = 2;
 	printf("%d", p);
-	for (i = 0; i < 50; i++)
+	for (i = 0; i < 49; i++)
 	{
 		printf(", %d", f);
 		f += p;
-		p = f;
+		p = f - p;
 	}
 	printf("\n");
 	return (0);
