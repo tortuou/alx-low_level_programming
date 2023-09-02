@@ -1,11 +1,11 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * sum_of_multiples - print sum of 3 & 5 multiples
+ * main - print sum of 3 & 5 multiples
  *
  * Return: sum of multiples
  */
-int sum_of_multiples(void)
+int main(void)
 {
 	int i, sum;
 
@@ -13,7 +13,7 @@ int sum_of_multiples(void)
 	{
 		if ((i % 3 == 0) || (i %  5 == 0))
 		{
-			sum += i
+			sum += i;
 		}
 	}
 	return (sum);
