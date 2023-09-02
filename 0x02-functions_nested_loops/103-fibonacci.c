@@ -12,14 +12,14 @@ int main(void)
 	p = 1;
 	f = 2;
 	sum = 0;
-	while (f < 4000000)
+	while (f <= 4000000)
 	{
-		f += p;
-		p = f - p;
 		if (f % 2 == 0)
 		{
 			sum += f;
 		}
+		f += p;
+		p = f - p;
 	}
 	printf("%lu\n", sum);
 	return (0);
