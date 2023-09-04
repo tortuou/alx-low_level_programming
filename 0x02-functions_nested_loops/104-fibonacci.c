@@ -9,7 +9,7 @@ int main(void)
 {
 	unsigned long int f, p, i, l, f1, f2, p1, p2;
 
-	l = 1000000000;
+	l = 10000000000;
 	p = 1;
 	f = 2;
 	printf("%lu", p);
