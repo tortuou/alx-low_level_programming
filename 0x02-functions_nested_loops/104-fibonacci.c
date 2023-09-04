@@ -25,7 +25,7 @@ int main(void)
 	p2 = p % l;
 	for (i = 90; i < 97; i++)
 	{
-		printf(", %lu%lu%lu", f1, (f2 / l), (f2 % l));
+		printf(", %lu%lu", f1 + (f2 / l), (f2 % l));
 		f1 += p1;
 		f2 += p2;
 		p1 = f1 - p1;
