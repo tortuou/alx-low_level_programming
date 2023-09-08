@@ -8,7 +8,8 @@
  */
 void print_number(int n)
 {
-	int power, number;
+	int power;
+       unsigned int number;
 
 	if (n < 0)
 	{
