@@ -9,7 +9,7 @@
 void print_number(int n)
 {
 	int power;
-       unsigned int number, num;
+	unsigned int number, num;
 
 	if (n < 0)
 	{
