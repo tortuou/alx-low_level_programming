@@ -9,7 +9,7 @@
 void print_number(int n)
 {
 	int power;
-       unsigned int number;
+       unsigned int number, num;
 
 	if (n < 0)
 	{
@@ -18,9 +18,10 @@ void print_number(int n)
 	}
 	power = 1;
 	number = n;
-	while (n >= 10)
+	num = n;
+	while (num >= 10)
 	{
-		n /= 10;
+		num /= 10;
 		power *= 10;
 	}
 	while (power >= 1)
