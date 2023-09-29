@@ -33,7 +33,7 @@ int prime(int m, int i)
 	{
 		if (m % i == 0)
 			return (0);
-		else 
+		else
 			return (prime(m, i - 1));
 	}
 	return (1);
