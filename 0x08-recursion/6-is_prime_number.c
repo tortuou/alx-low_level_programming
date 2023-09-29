@@ -29,5 +29,12 @@ int prime(int m, int i)
 		else
 			return (prime(m, i + 1));
 	}
+	else if (i > m)
+	{
+		if (m % i == 0)
+			return (0);
+		else 
+			return (prime(m, i - 1));
+	}
 	return (1);
 }
