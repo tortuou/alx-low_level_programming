@@ -35,5 +35,5 @@ int main(int argc, char *argv[])
 			}
 		}
 	}
-	return (printf("%d\n", n));
+	return (printf("%d\n", n), 0);
 }
