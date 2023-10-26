@@ -8,14 +8,24 @@
  */
 void print_binary(unsigned long int n)
 {
-	if (n >> 0)
+	unsigned long int j;
+	int i;
+
+	if (n == 0)
 	{
-		if (n >> 1)
-			print_binary(n >> 1);
-		printf("%ld", n & 1);
+		printf("0");
+		return;
 	}
-	else
+	j = n;
+	i = 0;
+	while ((j >>= 1) > 0)
+		i++;
+	while (i >= 0)
 	{
-		printf("%d", 0);
+		if ((n >> i) & 1)
+			printf("1");
+		else
+			printf("0");
+		i--;
 	}
 }
