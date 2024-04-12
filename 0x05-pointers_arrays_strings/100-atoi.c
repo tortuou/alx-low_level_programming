@@ -10,7 +10,7 @@
  */
 int _atoi(char *s)
 {
-	int i, len, j = 0;
+	int i, len, j = 0, sign = 1, res;
 	char *temp;
 
 	len = strlen(s);
@@ -26,14 +26,13 @@ int _atoi(char *s)
 			else
 				break;
 		}
-		else if (s[i] == '-' && ((s[i + 1] >= '0' &&
-					s[i + 1] <= '9') || s[i + 1] == '+') && s[i - 1] != ' ')
+		else if (s[i] == '-')
 		{
-			temp[j] = s[i];
-			j++;
+			sign *= -1;
 		}
 		else
 			continue;
 	}
-	return (atoi(temp));
+	res = atoi(temp);
+	return (res * sign);
 }
