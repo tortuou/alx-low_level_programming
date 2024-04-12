@@ -26,8 +26,8 @@ int _atoi(char *s)
 			else
 				break;
 		}
-		else if (s[i] == '-' && (s[i + 1] >= '0' &&
-					s[i + 1] <= '9') && s[i - 1] != ' ')
+		else if (s[i] == '-' && ((s[i + 1] >= '0' &&
+					s[i + 1] <= '9') || s[i + 1] == '+') && s[i - 1] != ' ')
 		{
 			temp[j] = s[i];
 			j++;
