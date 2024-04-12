@@ -11,6 +11,8 @@ void print_array(int *a, int n)
 {
 	int i = 0;
 
+	if (n <= i)
+		printf(" ");
 	while (i < (n - 1))
 	{
 		printf("%d, ", a[i]);
