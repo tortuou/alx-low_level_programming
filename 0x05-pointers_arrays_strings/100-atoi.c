@@ -11,6 +11,7 @@
 int _atoi(char *s)
 {
 	int i, len, j = 0, sign = 1;
+	signed int res;
 	char *temp;
 
 	len = strlen(s);
@@ -33,5 +34,6 @@ int _atoi(char *s)
 		else
 			continue;
 	}
-	return (atoi(temp) * sign);
+	res = atoi(temp) * sign;
+	return (res);
 }
