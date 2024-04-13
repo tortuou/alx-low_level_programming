@@ -10,7 +10,7 @@
  */
 int _atoi(char *s)
 {
-	int i, len, j = 0, sign = 1;
+	int i, len, j = 0, sign = 1, c = 0;
 	unsigned int res;
 	char *temp;
 
@@ -30,16 +30,24 @@ int _atoi(char *s)
 		else if (s[i] == '-')
 		{
 			sign *= -1;
+			c++;
 		}
 		else
 			continue;
 	}
-	res = atoi(temp) * sign;
+	if (c <= 1 && s[0] == '-' && j > 5)
+	{
+		return (atoi(temp));
+	}
+	else
+	{
+		res = atoi(temp) * sign;
 	/**
 	 * if (sign == -1)
 		*return ("-" + atoi(temp));
 	*else
 		*return (atoi(temp));
 		*/
-	return (res);
+		return (res);
+	}
 }
