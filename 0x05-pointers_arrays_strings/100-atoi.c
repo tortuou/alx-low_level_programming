@@ -11,7 +11,7 @@
 int _atoi(char *s)
 {
 	int i, len, j = 0, sign = 1;
-	signed int res;
+	unsigned int res;
 	char *temp;
 
 	len = strlen(s);
@@ -35,5 +35,11 @@ int _atoi(char *s)
 			continue;
 	}
 	res = atoi(temp) * sign;
+	/**
+	 * if (sign == -1)
+		*return ("-" + atoi(temp));
+	*else
+		*return (atoi(temp));
+		*/
 	return (res);
 }
